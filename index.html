@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+/* Set the width of the side navigation to 0 */
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+    <title>DANIEL SHILING</title>
+    <link rel="shortcut icon" type="image/png" href="dsdogfavicon.png"/>
+  </head>
+  <body>
+<!-- Side navigation text and close button -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="about.html">ABOUT</a>
+      <a href="blog.html">BLOG</a>
+    </div>
+<!-- Side navigation bars -->
+  <span onclick="openNav()"><div class="container" onclick="myFunction(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+  </span>
+    <div>
+      <img src="dsdogfinal_4.gif" border="0" alt="doggos" id="mainimage">
+    </div>
+    <footer> Website by <a href="https://codercreative.org" target="_blank">Laura Steel</a></footer>
+  </body>
+</html>
